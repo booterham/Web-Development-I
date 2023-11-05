@@ -1,0 +1,16 @@
+body {
+    background-color: hotpink;
+}
+
+#siem_img {
+    width: 80%;
+}
+
+#dumb {
+    color: orangered;
+}
+
+i {
+    font-size: 6px;
+    background-color: #fff;
+}

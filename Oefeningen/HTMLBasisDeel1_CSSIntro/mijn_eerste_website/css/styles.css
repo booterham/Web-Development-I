@@ -1,0 +1,22 @@
+body{
+/*    lettertype*/
+    font-family: sans-serif;
+/*    achtergrondkleur*/
+    background-color:hotpink;
+}
+h1{
+/*    onze heading een beetje groter maken*/
+    font-size: 4rem;
+}
+a {
+    color: aqua;
+}
+
+img{
+    background-color: deeppink;
+    max-width: 100%;
+}
+
+.inspringing{
+    margin-left: 40px;
+}
