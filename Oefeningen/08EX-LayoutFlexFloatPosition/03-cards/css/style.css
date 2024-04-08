@@ -1,0 +1,22 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 15px;
+}
+
+.card {
+  width: 245px;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+}
+
+.card footer {
+  background-color: rgba(96, 139, 168, 0.2);
+  padding: 10px;
+}
+
+.card .content {
+  padding: 10px;
+}
+
+/* Plaats je oplossing hieronder */
+

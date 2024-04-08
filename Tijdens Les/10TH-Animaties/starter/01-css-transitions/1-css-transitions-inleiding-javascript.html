@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS transitions</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #my-div {
+        background-color: lightgreen;
+        height: 100px;
+        width: 100px;
+        /* CSS transition:
+        Om een transitie-effect te bekomen 
+        moeten we minimaal de transition-duration instellen*/
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS transition JavaScript</h1>
+    <div id="my-div"></div>
+    <p>
+      <button type="button" id="btn1">Breedte wijzigen naar 300px</button>
+      <button type="button" id="btn2">Breedte wijzigen naar 100px</button>
+    </p>
+    <script>
+      'use strict';
+      const button1 = document.getElementById('btn1');
+      const button2 = document.getElementById('btn2');
+      const myDiv = document.getElementById('my-div');
+      // Als er op button1 geklikt wordt wijzigen we de
+      // breedte naar 300px
+      button1.onclick = () => (myDiv.style.width = '300px');
+      button2.onclick = () => (myDiv.style.width = '100px');
+    </script>
+  </body>
+</html>

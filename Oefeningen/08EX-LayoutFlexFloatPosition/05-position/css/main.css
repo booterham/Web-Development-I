@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Page layout */
+
+main {
+  width: 752px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Message box */
+
+.message-box {
+  background-color: lightblue;
+  border: 5px solid #000;
+}
+
+.message-box {
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+}
+
+.close-button {
+  width: 2rem;
+  height: 2rem;
+}

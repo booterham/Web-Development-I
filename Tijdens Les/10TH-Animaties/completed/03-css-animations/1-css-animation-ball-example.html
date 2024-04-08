@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS animations</title>
+    <style>
+      /* Basisopmaak */
+      body {
+        font-family: sans-serif;
+      }
+
+      div {
+        background-color: rebeccapurple;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;        
+      }
+
+      /* CSS animation */
+      /*****************/
+      div {
+        animation-name: my-animation;
+        animation-duration:2s;
+        animation-delay: 2s ;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 3;
+        animation-direction: alternate;    
+
+      }
+      div:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes my-animation {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(150px, 0);
+        }
+        100%{
+          transform: translate(150px, 150px);          
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS animations</h1>
+    <div></div>
+  </body>
+</html>

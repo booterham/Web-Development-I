@@ -1,0 +1,86 @@
+
+body {
+  font-family: monospace;
+  font-size: 1.4em;
+}
+/* Text shadow */
+h1{
+  text-shadow: gray 2px -1px ;
+}
+
+h2 {
+  font-size: 1.17em;
+}
+
+/* Plaats hier je oplossing */
+
+
+
+/* Page layout  */
+
+header,
+nav,
+main {
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation menu */
+
+nav li {
+  display: inline-block;
+  width: 170px;
+}
+
+nav a {
+  font-size: 1.2em;
+  color: #6789ab;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+/*Table*/
+
+table {
+  margin-bottom: 5px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px 10px;
+}
+table td:first-of-type {
+  min-width: 150px;
+}
+table td:last-of-type {
+  min-width: 300px;
+}
+table tr:first-child {
+  color: white;
+  background-color: black;
+}
+table tr:nth-child(2) {
+  background-color: lightgreen;
+}
+table tr:nth-child(3) {
+  background-color: lightyellow;
+}
+table tr:last-child {
+  background-color: lightgray;
+}

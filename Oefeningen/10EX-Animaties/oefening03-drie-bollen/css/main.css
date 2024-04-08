@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  width: 600px;
+  border: 1px solid #000;
+}
+
+.grid-container > div {
+  margin: 30px;
+}
+
+.grid-container p {
+  color: grey;
+  font-family: cursive;
+  text-align: center;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  margin: 40px auto;
+}
+.box1 {
+  background: rgb(60, 158, 148);
+}
+
+.box2 {
+  background: rgb(60, 158, 148);
+}
+
+.box3 {
+  background: rgb(60, 158, 148);
+}

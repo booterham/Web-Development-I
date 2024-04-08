@@ -1,0 +1,36 @@
+/* De boxes opmaken */
+/* **************** */
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  background-color: cyan;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.grid-container div {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+/* CSS Grid Layout */
+/*******************/
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 100px 100px 100px 100px;
+}
+
+/* Merk op dat de getallen lijnnummers zijn.
+  'grid-row: 3/5' betekent dus dat de div 
+  rij 3 en rij 4 overspant.
+ */
+
+div:nth-of-type(2) {
+  grid-row: 3/5;
+  grid-column: 2;
+}

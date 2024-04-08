@@ -1,0 +1,65 @@
+/* variables */
+/************/
+
+:root {
+  /* palet colors */
+  --themecolor1: rgb(10, 10, 10);
+  --themecolor2: rgb(45, 98, 113);
+  --themecolor3: white;
+
+  --font: Calibri, sans-serif;
+}
+
+/* base styles */
+/**************/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--themecolor2);
+  font-family: var(--font);
+  font-size: 1.1rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--themecolor2);
+}
+
+.container {
+  background-color: var(--themecolor3);
+  padding: 10px;
+  min-height: calc(100vh - 8px * 2);
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* nav styles */
+/**************/
+
+nav ul {
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+  /* navigatiemenu horizontaal maken */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin-top: 10px;
+  display: block;
+  color: var(--themecolor1);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specificity</title>
+  <style>
+    body {
+      font-size: 1.5em;
+    }
+
+    body > p {
+      background-color: red;
+      font-style: italic;
+    }
+
+    p {
+      background-color: green;
+      color:orange;
+    }
+
+    h1 + p {
+      color: white;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <h1>Specificity</h1>
+  <p>What is my color, background-color and font-style? Am i italicized or not?.</p>
+</body>
+</html>
+
+<!-- 
+waarden voorspellen voor p-element:    
+    font-size: 1.5em scaled? niet scaled blijkbaar
+    font-style: normal
+    color: white
+    background-color: red
+-->

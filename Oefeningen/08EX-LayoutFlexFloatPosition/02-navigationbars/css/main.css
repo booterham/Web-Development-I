@@ -1,0 +1,21 @@
+body {
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  max-width: 960px;
+}
+nav ul {
+  border: 1px solid #000;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}

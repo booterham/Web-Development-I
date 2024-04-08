@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .grid1, .grid2 {
+        margin: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 200px); 
+        grid-template-rows: 200px;
+        gap: 20px;
+      }
+      .grid1 > div, .grid2 > div {        
+        display: grid;                
+        border: 1px dashed black;
+      }
+      .grid1 > div > div, .grid2 > div > div {
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        color: white;
+      }
+
+      /* Voorbeelden transform property */
+      /**********************************/
+
+      .grid1 > div:nth-of-type(1) > div {
+        background-color: red;
+        transform: rotate(40deg);
+      }
+      .grid1 >div:nth-of-type(2) > div{
+        background-color: green;
+        transform: translateX(45px) rotate(40deg);
+      }
+      .grid1 > div:nth-of-type(3) > div {
+        background-color: blue;
+        transform: rotate(40deg) translateX(45px) ;
+      }
+
+      .grid2 > div:nth-of-type(1) > div {
+        background-color: red;
+        transform-origin: 0% 0%; /* of 'transform-origin: left top;' */
+        transform: rotate(20deg);
+      }
+
+      .grid2 > div:nth-of-type(2) > div {
+        background-color: green;      
+        transform: scale(0.75) rotate(45deg);
+      }
+
+      .grid2 > div:nth-of-type(3) > div {
+        background-color: blue;
+        transform: scale(0.50) rotate(45deg);        
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>transform-property</h1>
+    <div class="grid1">
+      <div>
+        <div>transform: rotate(40deg)</div>
+      </div>
+      <div>
+        <div>transform: translateX(45px) rotate(40deg)</div>
+      </div>
+      <div>
+        <div>transform: rotate(40deg) translateX(45px) </div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <div>transform-origin: 0% 0%; <br><br>transform: rotate(20deg);</div>
+      </div>
+      <div>
+        <div>transform: scale(0.75) rotate(45deg);</div>
+      </div>
+      <div>
+        <div>transform: scale(0.50) rotate(45deg);</div>
+      </div>
+    </div>
+  </body>
+</html>

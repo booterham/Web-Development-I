@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS transitions</title>
+    <style>
+      /* Algemeen opmaak */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      div {        
+        padding: 10px;
+        height: 100px;
+        width: 100px;
+        background-color: lightgreen;
+      }
+
+      /* CSS transition */
+      div {
+        transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+        transition-delay: 800ms;
+      }
+      
+      div:hover {
+        width: 300px;
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS transitions</h1>
+    <div>Hover me and wait ...</div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+/* De boxes opmaken */
+/* **************** */
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: 100px 100px 100px 100px;
+  background-color: cyan;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.grid-container div {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+div:nth-of-type(2) {
+  grid-row: 3/5;
+  grid-column: 2;
+}
+
+/* CSS Grid Layout */
+/*******************/

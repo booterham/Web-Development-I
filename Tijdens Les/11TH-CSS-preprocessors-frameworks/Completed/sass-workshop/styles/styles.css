@@ -1,0 +1,41 @@
+body {
+  font-family: Calibri, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+body, header {
+  background-color: rgb(153, 158, 219);
+}
+
+.container {
+  background-color: white;
+}
+
+header, .container {
+  padding: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+  /* navigatiemenu horizontaal maken */
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,87 @@
+body {
+  font-family: monospace;
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.17em;
+}
+
+/* Page layout  */
+
+header, nav, main {
+  width: 1080px;
+  margin: auto auto;
+}
+
+h1 {
+  text-shadow: 2px 2px 2px gray;
+}
+
+
+/* Navigation menu */
+
+nav ul {
+  padding: 0%;
+  margin: 0%;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 170px;
+}
+
+nav ul li a {
+  font-size: 1.2em;
+  color: #6789ab;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/*Table*/
+
+table {
+  margin-bottom: 5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px 10px;
+}
+
+table td:first-of-type {
+  min-width: 150px;
+}
+
+table td:last-of-type {
+  min-width: 300px;
+}
+
+table tr:first-child {
+  color: white;
+  background-color: black;
+}
+
+table tr:nth-child(2) {
+  background-color: lightgreen;
+}
+
+table tr:nth-child(3) {
+  background-color: lightyellow;
+}
+
+table tr:last-child {
+  background-color: lightgray;
+}

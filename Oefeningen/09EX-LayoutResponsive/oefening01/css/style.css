@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    height: 100vh;
+    font-size: 1.2em;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: honeydew;
+}
+
+p {
+    margin: auto;
+}
+
+#grootte::before {
+    content: "mobiel ";
+}

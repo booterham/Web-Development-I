@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registreer.</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<h1>Registreer.</h1>
+<form action="mailto:bauke.blomme@student.hogent.be" enctype="text/plain" method="post">
+    <label>
+        Naam:
+        <input type="text" name="naam" required>
+    </label> <br>
+    <label>
+        Voornaam:
+        <input type="text" name="vnaam" required>
+    </label> <br>
+    <label>
+        E-mail:
+        <input type="email" name="email" required>
+    </label> <br>
+    <label>
+        Geboortedatum:
+        <input type="date" name="gebdatum">
+    </label> <br>
+    <label>
+        Abonneren op nieuwsbrief
+        <input type="checkbox" name="abonneren" checked>
+    </label> <br>
+    <label>
+        Ik ga akkoord met het privacybeleid
+        <input type="checkbox" name="privacy" required>
+    </label> <br>
+    <input type="submit" value="Registreer">
+    <input type="reset" value="Clear">
+</form>
+</body>
+
+</html>

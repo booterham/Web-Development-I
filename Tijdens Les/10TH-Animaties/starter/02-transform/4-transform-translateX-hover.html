@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform-translate</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .grid-container {
+        margin: 40px;
+        min-width: 470px;
+        border: 1px dashed black;
+        overflow: hidden;
+
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: 150px;
+        gap: 10px;
+      }
+      .grid-container div {
+        color: white;
+        background-color: green;
+        padding: 10px;
+      }
+
+      /* CSS transition en transform */
+      /*******************************/
+      
+      .grid-container div {
+        transition: transform 1s;
+      }
+      .grid-container:hover div:nth-of-type(1) {
+        transform: translateX(100px);
+      }
+      .grid-container:hover div:nth-of-type(2) {
+        transform: translateX(200px);
+      }
+      .grid-container:hover div:nth-of-type(3) {
+        transform: translateX(300px);        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>transform: translateX();<br>:hover</h1>
+    <p>Hover over de container...</p>
+    <div class="grid-container">
+      <div>translateX(100px)</div>
+      <div>translateX(200px)</div>
+      <div>translateX(300px)</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Afspraak</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<h1>Maak je afspraak.</h1>
+<form action="mailto:bauke.blomme@student.hogent.be?subject=Afspraak" enctype="text/plain" method="post">
+    <label>
+        Datum:
+        <input type="date" name="Datum" required>
+    </label> <br>
+    <label>
+        Tijd:
+        <input type="time" name="Tijd" required>
+    </label> <br>
+    <label>
+        Reden afspraak: <br>
+        <textarea name="Info" placeholder="Vul hier de reden voor uw afspraak in..." required cols="60" rows="5"></textarea>
+    </label> <br>
+    <input type="submit" value="Maak afspraak">
+</form>
+</body>
+
+</html>

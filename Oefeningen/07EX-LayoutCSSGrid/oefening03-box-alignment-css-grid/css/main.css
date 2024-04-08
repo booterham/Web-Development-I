@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  background-color: lightgrey;
+  margin: 2rem 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.grid-container > p {
+  border: 1px solid #000;
+  background-color: orange;
+  padding: 1em;
+  margin: 0%;
+}
+
+/* Plaats je oplossing hieronder */
+.leftcenter {
+  align-self: center;
+  justify-self: start;
+}
+
+.right {
+  justify-self: end;
+}

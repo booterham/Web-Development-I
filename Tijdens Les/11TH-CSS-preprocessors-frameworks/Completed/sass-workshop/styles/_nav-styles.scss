@@ -1,0 +1,22 @@
+// Navigatiebalk
+// *************
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0px;
+    list-style-type: none;
+    /* navigatiemenu horizontaal maken */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    display: block;
+    color: $light;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

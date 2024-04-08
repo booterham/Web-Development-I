@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Keuzelijsten</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<h1>Maak de juiste keuze.</h1>
+
+<datalist id="lectoren">
+    <option value="Karine Samyn">Karine Samyn</option>
+    <option value="Stefaan Samyn">Stefaan Samyn</option>
+    <option value="Stefaan Lauwaerts">Stefaan Lauwaerts</option>
+    <option value="Lotte Vansteenberghe">Lotte Vansteenberghe</option>
+    <option value="Stefaan De Cock">Stefaan De Cock</option>
+</datalist>
+
+<form action="mailto:bauke.blomme@student.hogent.be?subject=Keuzes" method="post" enctype="text/plain">
+    <label>
+        Kies je favoriete serie:
+        <select name="serie">
+            <option value="GoT">Game of Thrones</option>
+            <option value="peaky">Peaky Blinders</option>
+            <option value="casadepapel">La Casa de Papel</option>
+            <option value="baby">Baby</option>
+            <option value="vikings">Vikings</option>
+            <option value="norsemen">Norsemen</option>
+        </select>
+    </label> <br>
+    <label>
+        Kies je favoriete lector:
+        <input list="lectoren" id="lector" name="lector">
+    </label> <br>
+    <input type="submit" value="Indienen">
+</form>
+</body>
+
+</html>

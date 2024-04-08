@@ -1,0 +1,52 @@
+/* base styles */
+/**************/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(45, 98, 113);
+  font-family: Calibri, sans-serif;
+  font-size: 1.1rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(45, 98, 113);
+}
+
+.container {
+  background-color: white;
+  padding: 10px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* nav styles */
+/**************/
+
+nav ul {
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+  /* navigatiemenu horizontaal maken */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin-top: 10px;
+  display: block;
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

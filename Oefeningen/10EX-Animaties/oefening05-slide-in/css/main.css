@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+
+button {
+  width: 140px;
+  height: 70px;
+  border-style: none;
+  border-radius: 10px;
+  font-size: large;        
+  background-color: rebeccapurple;
+  color: white;
+}
