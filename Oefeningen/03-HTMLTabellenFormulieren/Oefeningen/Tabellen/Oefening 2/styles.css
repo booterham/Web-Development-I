@@ -1,9 +1,0 @@
-.noborder,
-.noborder td {
-    border: 0px;
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
