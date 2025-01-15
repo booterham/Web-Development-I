@@ -13,19 +13,25 @@ body {
 
 /* De content van de h2 in het eerste artikel en de derde li 
 van elke keuzelijst worden in het rood weergegeven. */
-
-
-
+article:first-of-type h2, ul li:nth-of-type(3) { 
+  /* ul hierboven is eigenlijk onnodig aangezien elke li in een ul staat, eigenlijk te specifiek want als er ol zouden zijn zou het niet meer werken */
+  color: red
+}
 
 /* De derde li in de geneste keuzelijst moet vet worden weergegeven. */
-
-
+ul ul li:nth-of-type(3) {
+  font-weight: bold;
+}
 
 
 /* De eerste letter van de eerste paragraaf geef je
 een lettergrootte van 2 em.*/
-
-
-
+p:first-of-type::first-letter {
+  font-size: 2em;
+}
 
 /* De laatste paragraaf van de aside in bold en tekstkleur #128956.*/
+aside p:last-of-type {
+  font-weight: bold;
+  color: #128956;
+}
