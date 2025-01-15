@@ -9,7 +9,26 @@
 
 <body>
     <h1>Aanmelden.</h1>
-    
+    <form action="mailto:bauke.blomme@student.hogent.be?subject=Aanmelden" method="post" enctype="text/plain">
+        <div>
+            <label>E-mail:
+                <input type="email" name="email" placeholder="naam@server.com" required>
+            </label>
+        </div>
+        <div>
+            <label>Wachtwoord:
+                <input type="password" name="wachtwoord" required>
+            </label>
+        </div>
+        <div>
+            <label>Aangemeld blijven:
+                <input type="checkbox" name="aangemeldblijven">
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Meld je aan.">
+        </div>
+    </form>
 </body>
 
 </html>

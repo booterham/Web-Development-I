@@ -9,7 +9,23 @@
 
 <body>
     <h1>Maak je afspraak.</h1>
-    
+    <form action="mailto:bauke.blomme@student.hogent.be?subject=Afspraak" method="post">
+        <div>
+            <label for="datum">Datum:</label>
+            <input type="date" name="datum" value="2020-01-01" required>
+        </div>
+        <div>
+            <label for="tijd">Tijd:</label>
+            <input type="time" name="tijd" required>
+        </div>
+        <div>
+            <label for="reden">Reden afspraak:</label><br>
+            <textarea name="reden"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Dien in">
+        </div>
+    </form>
 </body>
 
 </html>

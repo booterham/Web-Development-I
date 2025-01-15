@@ -1,55 +1,105 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,user-scalable=yes"
-    />
-    <title>Schilderwerken Vander Beken</title>
-    <!-- <link href="css/main.css" rel="stylesheet" /> -->
-    
-  </head>
 
-  <body>
-    <header>
-      <img
-        src="images/schilderwerkenvanderbeken_logo.png"
-        alt="Vander Beken Logo"
-      />
-    </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="over_ons.html">Over ons</a></li>
-        <li><a href="realisaties.html">Realisaties</a></li>
-        <li><a>Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h1>Adres</h1>
-      <address>
-        Nederzwalmsesteenweg 94<br />
-        9750 Zingem<br />
-        <a href="tel:+32999999999">+32 999 99 99 99</a><br />
-        <a href="mailto:info@test.be">info@test.be</a>
-      </address>
-      <h1>Contact</h1>
-      <p>
-        Wij zijn op het bovenstaande adres bereikbaar op de onderstaande ogenblikken
-      </p>
-      
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+  <title>Schilderwerken Vander Beken</title>
+  <link href="css/main.css" rel="stylesheet">
 
-      <h1>Maak een afspraak</h1>
-      <p>
-        Vul volgend formulier in om een afspraak te maken (Naam - email -
-        telefoon zijn verplicht)
-      </p>
-      
-    </main>
+</head>
 
-    <footer>
-      <p>&copy; Schilder- en decoratiewerken Vander Beken</p>
-    </footer>
-  </body>
+<body>
+  <header>
+    <img src="images/schilderwerkenvanderbeken_logo.png" alt="Vander Beken Logo">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="over_ons.html">Over ons</a></li>
+      <li><a href="realisaties.html">Realisaties</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Adres</h1>
+    <address>
+      Nederzwalmsesteenweg 94<br>
+      9750 Zingem<br>
+      <a href="tel:+32999999999">+32&nbsp;999&nbsp;99&nbsp;99&nbsp;99</a><br>
+      <a href="mailto:info@test.be">info@test.be</a>
+    </address>
+    <h1>Contact</h1>
+    <p>
+      Wij zijn op het bovenstaande adres bereikbaar op de onderstaande ogenblikken
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <td></td>
+          <th scope="col">Voormiddag</th>
+          <th scope="col">Namiddag</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Maandag</th>
+          <td colspan="2">10h00-15h00</td>
+        </tr>
+        <tr>
+          <th scope="row">Dinsdag</th>
+          <td>10h00-12h00</td>
+          <td>Gesloten</td>
+        </tr>
+        <tr>
+          <th scope="row">Woensdag</th>
+          <td>Gesloten</td>
+          <td>14h00-16h00</td>
+        </tr>
+        <tr>
+          <th scope="row">Donderdag</th>
+          <td rowspan="2">10h00-12h00</td>
+          <td rowspan="2">15h00-17h00</td>
+        </tr>
+        <tr>
+          <th scope="row">Vrijdag</th>
+        </tr>
+        <tr>
+          <th scope="row">Zaterdag</th>
+          <td rowspan="2" colspan="2">Gesloten</td>
+        </tr>
+        <tr>
+          <th scope="row">Zondag</th>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <h1>Maak een afspraak</h1>
+    <p>
+      Vul volgend formulier in om een afspraak te maken (Naam - email -
+      telefoon zijn verplicht)
+    </p>
+    <form action="/afspraak.php" method="get" enctype="text/plain">
+      <p><label>Naam &amp; voornaam&nbsp;</label><input type="text" name="naam" required placeholder="Naam en voornaam"></p>
+      <p><label>Email&nbsp;<input type="email" name="email" required placeholder="E-mailadres"></label></p>
+      <p><label>Telefoon&nbsp;<input type="tel" name="tel" required placeholder="Telefoon"></label></p>
+      <p><label>Voorkeur bezoek datum&nbsp;<input type="date" name="datum"></label></p>
+      <p><label>Voorkeur bezoek uur&nbsp;<select name="uur">
+        <option value="18-19">Tussen 18 en 19 uur</option>
+      </select></label></p>
+      <p><label>Herschilderen<input type="radio" name="herschilderen" value="herschilderen"></label><label>Nieuwe woning <input type="radio" name="herschilderen" value="nieuwewoning"></label></p>
+      <p><label>Extra informatie <br>
+      <textarea name="info"></textarea></label></p>
+      <p><button type="submit">verzend</button></p>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; Schilder- en decoratiewerken Vander Beken</p>
+  </footer>
+</body>
+
 </html>

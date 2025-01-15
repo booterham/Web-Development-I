@@ -9,9 +9,24 @@
 
 <body>
     <h1>Favoriete kleur - getal. Score.</h1>
-    
-
-    
+    <form action="mailto:bauke.blomme@student.hogent.be?subject=Favorietjes" method="post" enctype="text/plain">
+        <div>
+            <label>Kies je favoriete kleur:
+                <input type="color" name="kleur" value="#ff0000">
+            </label>
+        </div>
+        <div>
+            <label>Kies je favoriete getal:
+                <input type="number" name="getal" min="0" required value="13">
+            </label>
+        </div>
+        <div>
+            <label for="score">Geef een score voor WDI:</label>
+            <input type="range" name="score" id="score" min="0" max="20">
+            <output id="showScore"></output>
+        </div>
+        <button type="submit">Verstuur</button>
+    </form>
     <script src="js/slider.js"></script>
 </body>
 

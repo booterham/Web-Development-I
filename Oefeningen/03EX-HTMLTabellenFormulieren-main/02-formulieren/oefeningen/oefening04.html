@@ -9,7 +9,37 @@
 
 <body>
     <h1>Registreer.</h1>
-    
+    <form action="mailto:bauke.blomme@student.hogent.be?subject=Registreer">
+        <div>
+            <label>Naam:
+                <input type="text" name="naam" required>
+            </label>
+        </div>
+        <div>
+            <label>Voornaam:
+                <input type="text" name="voornaam" required></label>
+        </div>
+        <div>
+            <label>E-mail:
+                <input type="email" name="email" required></label>
+        </div>
+        <div>
+            <label>Geboortedatum:
+                <input type="date" name="geboortedatum" required></label>
+        </div>
+        <div>
+            <label>Abonneren op nieuwsbrief:
+                <input type="checkbox" name="nieuwsbrief"></label>
+        </div>
+        <div>
+            <label>Ik ga akkoord met het privacybeleid:
+                <input type="checkbox" name="privacybeleid"></label>
+        </div>
+        <div>
+            <button type="submit">Registreer</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
 </body>
 
 </html>

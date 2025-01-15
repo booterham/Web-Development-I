@@ -9,7 +9,26 @@
 
 <body>
     <h1>Poll.</h1>
-    
+    <form action="mailto:bauke.blomme@student.hogent.be?subject=Poll" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Ik volg Web Development I</legend>
+
+            <input type="radio" name="leslocatie" value="campus830" checked>Op de campus van 8:30-10:00 <br>
+            <input type="radio" name="leslocatie" value="campus11">Op de campus van 11:00-12:30 <br>
+            <input type="radio" name="leslocatie" value="online">Online van 11:00-12:30
+        </fieldset>
+        <fieldset>
+            <legend>Examen Web Development I</legend>
+
+            <input type="radio" name="examen" value="campus" checked>Op de campus op laptop <br>
+            <input type="radio" name="examen" value="FE">In FE - schriftelijk <br>
+            <input type="radio" name="examen" value="online_laptop">Online op laptop
+            <input type="radio" name="examen" value="mondeling">Online mondeling
+
+        </fieldset>
+        <button type="submit">Verstuur</button>
+        <button type="reset">Clear</button>
+    </form>
 </body>
 
 </html>
