@@ -15,70 +15,82 @@ Noteer telkens: kleur - css selector - specificity. Rangschik vervolgens de lijs
 
 Controleer of jouw lijst overeenkomt met deze in de Developer Tools.
 
+/*0,1,0*/
+/* .red */
+
+/*0,0,3*/
+/* ul li li */
+
+/*0,0,2*/
+/* ul li */
+
+/* 0,0,1 */
+/* li */
 
 
 
-
-
-
+/*
 Vraag 2: (Multiple choice)
 *******
-  Beschouw de li-elementen in het nav-element. Hoe krijgen deze elementen hun waarde
-  voor de CSS-eigenschap list-style-type?
+Beschouw de li-elementen in het nav-element. Hoe krijgen deze elementen hun waarde
+voor de CSS-eigenschap list-style-type?
     1. via de cascade
     2. via inheritance
     3. ze krijgen hun initial value
-  Tip Maak gebruik van de Developer Tools
+Tip Maak gebruik van de Developer Tools
+
+3
 
 
 Vraag 3: (Multiple choice)
 *******
-  Beschouw het ul-element in het nav-element. Hoe verkrijgt dit element zijn waarde
-  voor de CSS-eigenschap list-style-type?
+Beschouw het ul-element in het nav-element. Hoe verkrijgt dit element zijn waarde
+voor de CSS-eigenschap list-style-type?
     1. via de cascade
     2. via inheritance
     3. het krijgt zijn initial value
-  Tip Maak gebruik van de Developer Tools
+Tip Maak gebruik van de Developer Tools
 
+3
 */
 
 
-body{
+body {
     font-family: monospace, Calibri, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
-    color:yellow;
+li {
+    color: yellow;
 }
 
-ul li{
+ul li {
     color: green;
 }
 
-.red{
-    color:red;
-}
-
-ul li li{
-    color: blue;
-}
-
-aside{
+.red {
     color: red;
 }
-ul a{
-    color:red;
-}
-nav a{
-    color: yellow;
-}
-nav a{
+
+ul li li {
     color: blue;
 }
 
+aside {
+    color: red;
+}
 
+ul a {
+    color: red;
+}
 
+nav a {
+    color: yellow;
+}
+
+nav a {
+    color: blue;
+}
