@@ -1,0 +1,35 @@
+#nav4 li {
+  flex: 1
+}#nav4 li {
+  flex: 1
+}body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 15px;
+}
+
+.card {
+  width: 245px;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+}
+
+.card footer {
+  background-color: rgba(96, 139, 168, 0.2);
+  padding: 10px;
+}
+
+.card .content {
+  padding: 10px;
+}
+
+/* Plaats je oplossing hieronder */
+.cards {
+  display: block flex;
+  gap: 5px;
+}
+
+.card {
+  display: block flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

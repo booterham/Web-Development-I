@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 24px 24px 30px 56px;
+}
+
+h1 {
+    font-size: 4.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 500;
+    margin-top: 56px;
+    margin-bottom: 30x;
+}
+
+.fotos {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.75rem;
+}
+
+img {
+    width: 100%;
+}
+
+footer nav {
+    margin-top: 84px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1fr 3rem 1fr 3rem 1fr 3rem 1fr minmax(0, 1fr);
+    grid-template-areas: ". content . uitgelicht . bedrijf . help .";
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 2;
+}
+
+footer h3 {
+    color: rgb(17, 17, 17);
+    font-weight: 500;
+}
+
+footer a {
+    color: rgb(117, 117, 117);
+    text-decoration: none;
+    ;
+}
+
+.box1 {
+    grid-column: 2;
+}
+
+.box2 {
+    grid-column: 4;
+}
+
+.box3 {
+    grid-column: 6;
+}
+
+.box4 {
+    grid-column: 8;
+}

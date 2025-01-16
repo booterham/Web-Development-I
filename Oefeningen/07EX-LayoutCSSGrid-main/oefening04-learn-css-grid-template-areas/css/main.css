@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Opmaak van de vierkanten */
+.grid-container div {
+  font-size: 2rem;
+  background-color: greenyellow;
+  border: 2px solid darkcyan;
+}
+
+/* Creëren van de grid container en de grid */
+.grid-container {
+  display: grid;
+  /* De explicit grid zullen we creëren via
+  grid-template-areas.  */
+  grid-auto-columns: 5rem;
+  grid-auto-rows: 5rem;
+  gap: 0.2rem; 
+}
+
+
+/* Plaats je oplossing hieronder */
+/*********************************/
+
+.grid-container div {
+  align-items: center;
+  justify-items: center;
+  display: grid;
+}
+
+.grid-container {
+  grid-template-areas: 
+  ". l . ."
+  ". e . ."
+  ". a . ."
+  "g r i d"
+  ". n . .";
+}
+
+#box1 {
+  grid-area: l;
+}
+#box2 {
+  grid-area: e;
+}
+#box3 {
+  grid-area: a;
+}
+#box4 {
+  grid-area: r;
+}
+#box5 {
+  grid-area: n;
+}
+#box6 {
+  grid-area: g;
+}
+#box7 {
+  grid-area: i;
+}
+#box8 {
+  grid-area: d;
+}

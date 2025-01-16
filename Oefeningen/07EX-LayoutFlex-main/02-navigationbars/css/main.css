@@ -1,0 +1,40 @@
+body {
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  max-width: 960px;
+}
+nav ul {
+  border: 1px solid #000;
+  list-style-type: none;
+  padding: 0;
+  display: block flex;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  border: 2px solid rgb(96, 139, 168);
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+#nav1 ul {
+  justify-content: space-between;
+}
+
+#nav2 li {
+  flex: auto;
+}
+
+#nav3 li {
+  flex: 1;
+}
+
+.push-right {
+  margin-inline-start: auto;
+}

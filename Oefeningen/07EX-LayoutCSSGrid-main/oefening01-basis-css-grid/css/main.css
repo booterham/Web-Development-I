@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  border: 1px solid #000;
+  background-color: orange;
+  padding: 1em;
+}
+
+/* Plaats je oplossing hieronder */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-areas: 
+  "a . . ."
+  ". b b ."
+  ". . c c";
+}
+
+div:first-child {
+  grid-area: a;
+}
+
+div:nth-child(2) {
+  grid-area: b;
+}
+
+div:nth-child(3) {
+  grid-area: c;
+}
