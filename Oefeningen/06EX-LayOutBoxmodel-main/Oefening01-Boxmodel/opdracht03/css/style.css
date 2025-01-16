@@ -1,7 +1,13 @@
 #box1 {
     border: 5px solid orange;
+    margin-bottom: 20px;
 }
 
 #box2 {
     border: 5px solid blue;
+    margin-bottom: 15px;
+}
+
+body {
+    margin: 0;
 }

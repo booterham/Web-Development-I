@@ -1,5 +1,19 @@
 span {
-    font-weight: bold;
-    border: 1px solid blue;
-    background-color: lightblue;
-  }
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: lightblue;
+}
+
+span:first-of-type {
+  /* visibility: hidden; */
+}
+
+span:nth-of-type(2) {
+  /* display: none; */
+  width: 100px;
+  height: 100px;
+}
+
+span {
+  display: block;
+}

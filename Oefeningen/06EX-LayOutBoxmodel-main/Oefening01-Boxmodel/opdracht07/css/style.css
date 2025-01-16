@@ -11,8 +11,10 @@ p {
 #box2 {
   box-sizing: border-box;
 
-  width: 640px;
-  height: 100px;
+  /* 640 + 2*15 + 2*6 */
+  width: 682px;
+  /* 100 + 2*15 + 2*6 */
+  height: 142px;
 
   border: 6px solid blue;
 }

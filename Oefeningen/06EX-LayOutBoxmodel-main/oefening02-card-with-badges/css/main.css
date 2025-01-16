@@ -1,3 +1,58 @@
 code {
     color: brown;
 }
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+    background-color: pink;
+    line-height: 1.3em;
+    margin: 0;
+    font-size: 18px;
+    color: rgb(106, 46, 66)
+}
+
+h1,
+.card-title {
+    font-family: 'Lucida Serif';
+}
+
+h1 {
+    text-shadow: 2px 2px 5px rgb(143, 0, 0);
+}
+
+.container {
+    inline-size: calc(100% - 48px);
+    margin-inline: auto;
+    max-inline-size: 960px;
+}
+
+.profile-card {
+    margin-inline: 100px;
+    padding: 20px;
+    border: 1px solid brown;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-block-end: 0.67rem;
+}
+
+.badges * {
+    color: rebeccapurple;
+    background-color: lightpink;
+    display: inline-block;
+    padding-block: 7px;
+    padding-inline: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.badges *:hover {
+    background-color: rebeccapurple;
+    color: lightpink;
+}

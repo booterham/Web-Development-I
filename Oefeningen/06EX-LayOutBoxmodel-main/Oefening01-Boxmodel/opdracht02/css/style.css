@@ -1,0 +1,14 @@
+div:first-of-type {
+    border: 5px solid orange;
+    max-width: 640px;
+}
+
+div:nth-of-type(2) {
+    border: 5px solid blue;
+    /* height: 20px; */
+    /* overflow: hidden; */
+}
+
+div {
+    padding: 20px;
+}
