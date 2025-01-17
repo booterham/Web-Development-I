@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiggle button</title>
+    <style>
+      /* opmaak button */
+      button {
+        padding: 20px;
+        border: none;
+        background-color: green;
+        color: white;
+        font-size: x-large;
+        border-radius: 5px;
+      }
+
+      /* typ hieronder je oplossing */
+      
+
+      /* prettier-ignore */
+      @keyframes wiggle {
+        0%,
+        7% {transform: rotate(0);}
+        15% {transform: rotate(-15deg);}
+        20% {transform: rotate(10deg);}
+        25% {transform: rotate(-10deg);}
+        30% {transform: rotate(6deg);}
+        35% {transform: rotate(-4deg);}
+        40%, 100% {transform: rotate(0);}
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Wiggle button</h1>
+    <button>Buy!</button>
+  </body>
+</html>
