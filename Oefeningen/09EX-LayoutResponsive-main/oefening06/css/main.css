@@ -1,0 +1,71 @@
+body {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 14px;
+}
+
+nav {
+    color: #cccccc;
+    background-color: #343a40;
+    padding: 14px;
+}
+
+nav a {
+    color: #9a9a9a;
+    text-decoration: none;
+    display: block;
+    padding: 3px 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a[class=active] {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#hamburger-icon:hover {
+    cursor: pointer;
+}
+
+#menu-checkbox:checked~ul {
+    display: block;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        max-width: 640px;
+        margin: 0 auto;
+    }    
+}
+
+@media screen and (min-width: 576px) {
+    #menu-checkbox:checked~ul, #menu-checkbox ~ ul {
+        display: block flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #hamburger-icon {
+        display: none;
+    }
+
+    li {
+        padding: 0 7px;
+    }
+}
